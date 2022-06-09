@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <!--Alexa Noriega Y Dafne Lugo-->
+	<img src="https://lv2-cdn.azureedge.net/straykids/cbc5d19a62f94f5ea370a9025bf61e89-%EC%9E%90%EC%82%B0%201.png" class="skzlogo" WIDTH=80 HEIGHT=50>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Noto+Sans+KR&family=Raleway&display=swap" rel="stylesheet">
+	<title>&#128147;Discovering Stray Kids&#128147;</title>
+  <!--los alerts al iniciar la página-->
+    <script>
+      //al entrar
+        window.onload=function(){alert('Do you want to buy something?, check this out, you will love it');}
+      //al salir
+        window.onunload=function(){alert('THANKS FOR VISITING');}
+    </script>
+<!-- la imagen del logo de stray kids-->
+<style type="text/css">
+       img.skzlogo {
+  float: left;
+  margin-right: 100px;
+  margin-left: 20px;
+
+  }
+    </style>
+</head>
+<!--esto es para la imagen de fondo-->
+<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); background-image: url(https://img.freepik.com/free-vector/white-abstract-background_23-2148806276.jpg?w=2000); background-repeat: no-repeat;
+background-position: center 0%;">
+	<style type="text/css">
+
+    /*Margen de la página*/
+		body {
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  /*tamaño de la pagina*/
+  height: 800px;
+}
+  /*clase del menú, es para que el menu se vea de manera horizontal*/
+	ul.horizontal li{
+	display:block;
+	float:left;
+	padding: 10px;
+}
+  /*es pára que los links no salgan subrayados ni azules*/
+a { text-decoration: none; 
+    color: black;} 
+ /*clase para diseño de la segunda imagen*/
+  img.skzlogo {
+  float: left;
+  margin-top: 20px;
+  }
+
+ul.redes li{
+    list-style: none;
+    display: block;
+    float: left;
+    padding: 10px;
+}
+    font-face{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+
+.lcdstyle{ /*Example CSS to create LCD countdown look*/
+	background-color:black;
+	color:yellow;
+	font: bold 18px MS Sans Serif;
+	padding: 3px;
+}
+
+.lcdstyle sup{ /*Example CSS to create LCD countdown look*/
+	font-size: 80%
+}
+
+
+	</style>
+
+    <!--código para el menú-->
+	<ul class="horizontal" align=center>
+    <li><a href="https://equipo8lol.github.io/discoveringStrayKIds/"><font face="Raleway" color="black"><b>HOME</b></font></a></li>
+    <li><a href="https://equipo8lol.github.io/StrayKidsDiscography/"><font face="Raleway"><b>DISCOGRAPHY</b></font></a></li>
+    <li><a href="C:\Users\erika\Downloads\members.html"><font face="Raleway"><b>MEMBERS</b></font></a></li>
+    <li><a href="C:\Users\erika\Downloads\formulario.html"><font face="Raleway"><b>QUIZ</b></font></a></li>
+    <li><a href="C:\Users\erika\Downloads\venta.html"><font face="Raleway"><b>STORE</b></font></a></li>
+  </ul>
+
+
+  <br><br><br><hr><br><br><br>
+  <!--el titulo de página-->
+  <center><font face="Raleway" size=5 color="#000000"><b>STORE</b></font></center>
+<script type="text/javascript">
+//estas funciones son para que cada vez que le piques a la imagenes te aparezca un alert diciendo pick me y es una funcion por cada imagen
+  function album1(){
+    alert("Pick me!");
+  }
+
+  function album2(){
+    alert("Pick me!");
+  }
+
+  function album3(){
+    alert("Pick me!");
+  }
+
+  function album4(){
+    alert("Pick me!");
+  }
+
+//esta funcion es para caluclar el precio final de la compra junto con la cantidad de productos 
+
+  function total(){
+    //estas son las variables para el total y cantidad de productos 
+    var t=0;
+    var c=0;
+//primero se agarra el id de la tabla de abajo por ejemplo este es el album miroh, es un checkbox lo que se tiene que señalar asi que primero se tiene que crear una variable que agarre el elemento id y con el .checked.true se tiene que revisar si esta la casilla seleccionada para eso el if para saber si eso se cumple si es asi el total se le sumara el precio del producto y la cantidad de productos se sumara a 1 y asi es con todas las demas
+    var p1=document.getElementById("d1").checked==true;
+      if(p1==true){
+        t=t+700;
+        c=c+1;
+  }
+
+  var p2=document.getElementById("d2").checked==true;
+      if(p2==true){
+        t=t+190
+        c=c+1;
+  }
+
+  var p3=document.getElementById("d3").checked==true;
+      if(p3==true){
+        t=t+887;
+        c=c+1;
+  }
+
+  var p4=document.getElementById("d4").checked==true;
+      if(p4==true){
+        t=t+100;
+        c=c+1;
+  }
+
+  var p5=document.getElementById("d5").checked==true;
+      if(p5==true){
+        t=t+800;
+        c=c+1;
+  }
+
+  var p6=document.getElementById("d6").checked==true;
+      if(p6==true){
+        t=t+190;
+        c=c+1;
+  }
+
+  var p7=document.getElementById("d7").checked==true;
+      if(p7==true){
+        t=t+350;
+        //en este caso dice que se compran dos luces entonces se pone 2 productos
+        c=c+2;
+  }
+
+  var p8=document.getElementById("d8").checked==true;
+      if(p8==true){
+        t=t+450;
+        c=c+1;
+  }
+
+  var p9=document.getElementById("d9").checked==true;
+      if(p9==true){
+        t=t+650;
+        c=c+1;
+  }
+
+  var p10=document.getElementById("d10").checked==true;
+      if(p10==true){
+        t=t+190;
+        c=c+1;
+  }
+
+  var p11=document.getElementById("d11").checked==true;
+      if(p11==true){
+        t=t+550;
+        //en este son 3 luces, 3 productos 
+        c=c+3;
+  }
+
+  var p12=document.getElementById("d12").checked==true;
+      if(p12==true){
+        t=t+900;
+        c=c+1;
+  }
+  //esta variable es para el nombre se hizo un label donde se insertaba en correo electronico esa es la variable n 
+  var n= document.getElementById("nombre").value;
+  //el alert es para darle la información al cliente, donde se le llama por su correo y le dice la cantidad de productos y el precio final
+  alert("Oh! Finish? Thank you "+n+" for purshasing, there would be "+c+" products, your total is: "+t+" MX PESOS,come back soon!");
+
+}
+
+</script>
+
+  <br><br><br><br><br>
+  <!--esta tabla su unica función es hacer que las imagenes se vean a lado y no para abajo en linea si no es forma horizontal-->
+  <table align="center">
+    <tr>
+      <!--aqui se puso la primera imagen, el onclick es para que se ejecute la funcion de album1 que es el alert pick me-->
+    <td><img width="200" height="200" src="https://cf.shopee.ph/file/28585867e64d220e08896e7b20cdb9b8" onclick="album1()"></td>
+ <!--y es lo mismo con las otras 3 imagenes-->
+    <td><img width="200" height="200" src="https://m.media-amazon.com/images/I/71STX12sQEL._AC_SX425_.jpg" onclick="album2()"></td>
+
+    <td><img width="200" height="200" src="https://cf.shopee.com.mx/file/f9d1dfdc203671dbc0968d7b00cb0086" onclick="album3()"></td>
+
+    <td><img width="200" height="200" src="https://i.pinimg.com/736x/c3/12/bf/c312bf87ba10b9212f7835f19db56d23.jpg" onclick="album4()"></td>
+    </tr>
+    <tr>
+      <!--esto aparece abajo de las imagenes hace referencia a los productos disponibles-->
+      <td><font face="Raleway" color="black"><center>Available</center></font></td>
+      <td><font face="Raleway" color="black"><center>Available</center></font></td>
+      <td><font face="Raleway" color="black"><center>Available</center></font></td>
+      <td><font face="Raleway" color="black"><center>Available</center></font></td>
+    </tr>
+    <tr>
+      <!--aqui se empieza a poner el input de los checkboz con su id como se vio arriba para poder hacer ==true y hacer los calculos, a lado del checkbox esta el producto con su presio en pesos mexicanos-->
+      <td><center><input type="checkbox" id="d1"><font face="Louis George Cafe">BUY MIROH $700MX</font></center><br></td>
+      <td><center><input type="checkbox" id="d2"><font face="Louis George Cafe">BUY WOLF $190MX</font></center><br></td>
+      <td><center><input type="checkbox" id="d3"><font face="Louis George Cafe">BUY 1 LIGHTSTICK $187MX</font></center><br></td>
+      <td><center><input type="checkbox" id="d4"><font face="Louis George Cafe">BUY 10 PHOTOCARDS $100MX</font></center><br></td>
+    <!-- aqui es lo mismo-->
+    </tr>
+    <tr>
+      <td><center><input type="checkbox" id="d5"><font face="Louis George Cafe">BUY ODDINARY $800MX</font></center><br></td>
+      <td><center><input type="checkbox" id="d6"><font face="Louis George Cafe">BUY DWAEKKI $190MX</font></center><br></td>
+      <td><center><input type="checkbox" id="d7"><font face="Louis George Cafe">BUY 2 LIGHTSTICK $350MX</font></center><br></td>
+      <td><center><input type="checkbox" id="d8"><font face="Louis George Cafe">BUY 50 PHOTOCARDS $450MX</font></center><br></td>
+
+    </tr>
+    <tr>
+      <td><center><input type="checkbox" id="d9"><font face="Louis George Cafe">BUY ELEVATOR $650MX</font></center><br></td>
+      <td><center><input type="checkbox" id="d10"><font face="Louis George Cafe">BUY BbokAri $190MX</font></center><br></td>
+      <td><center><input type="checkbox" id="d11"><font face="Louis George Cafe">BUY 3 LIGHTSTICK $550MX</font></center><br></td>
+      <td><center><input type="checkbox" id="d12"><font face="Louis George Cafe">BUY 100 PHOTOCARDS $900MX</font></center><br></td>
+
+    </tr>
+  </table>
+
+<!--aqui se pone un label solicita el gmail para enviarle un ticked a la persona que compro, y un input con el id "nombre" el de arriba donde se pone adentro de un alert-->
+  <br><br><br><br><br>
+  <label>Tell me your email, a ticket will be sent to you c: </label>
+  <input id="nombre" type="text" placeholder="Gmai.....">
+  <!--este boton ejecuta la función total donde esta el total de productos y el precio y donde verifica los checkbox-->
+  <button onclick="total()">FINISH :D</button>
+
+
+
+<!--son los a href para las imagenes que te llevan a las redes sociales de la banda-->
+  <hr>
+    <ul class="redes">
+                <li>
+                    <a href="https://www.instagram.com/realstraykids" target="blank"><img width="25" height="25" alt="INSTAR" src="https://straykids.jype.com/Content/Pc/images/common/sns_instagram_b.png"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Stray_Kids" target="blank"><img width="25" height="25" alt="TWITER" src="https://straykids.jype.com/Content/Pc/images/common/sns_twitter_b.png"></a>
+                </li>
+                <li>
+                    <a href="https://web.facebook.com/JYPEStrayKids" target="blank"><img width="25" height="25" alt="FACEBOOK" src="https://straykids.jype.com/Content/Pc/images/common/sns_facebook_b.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/c/StrayKids" target="blank"><img width="25" height="25" alt="YOUTUBE" src="https://straykids.jype.com/Content/Pc/images/common/sns_youtube_b.png"></a>
+                </li>
+    </ul>
+
+
+</BODY>
+
+</HTML>
